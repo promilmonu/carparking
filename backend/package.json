@@ -1,0 +1,35 @@
+{
+  "name": "parking-management-backend",
+  "version": "1.0.0",
+  "description": "REST API for the Vehicle Parking Management System (Express + MongoDB)",
+  "main": "src/server.js",
+  "private": true,
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "seed": "node src/scripts/seed.js",
+    "test": "jest --runInBand --forceExit"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "express": "^5.3.0",
+    "express-rate-limit": "^8.0.0",
+    "helmet": "^8.1.0",
+    "joi": "^17.13.3",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^9.11.1",
+    "morgan": "^1.10.2",
+    "swagger-ui-express": "^5.0.1"
+  },
+  "devDependencies": {
+    "jest": "^30.0.0",
+    "mongodb-memory-server": "^11.3.0",
+    "nodemon": "^3.1.10",
+    "supertest": "^7.1.4"
+  },
+  "overrides": {
+    "mongodb": "7.5.0"
+  }
+}
